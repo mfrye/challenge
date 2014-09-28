@@ -1,0 +1,19 @@
+<div>
+
+  <div style="text-align: center;">
+    <h1>Circle Game</h1>
+    <p>Try and keep your mouse inside the circle!</p>
+    <p>Click the circle to start</p>
+    <h3>Score: {{score}}</h3>
+  </div>
+
+  <fa-app class="container-inner" style="width: 800px; height: 600px;">
+    <fa-surface fa-background-color="'#073642'"></fa-surface>
+    <fa-modifier ng-repeat="circle in circles"  fa-size="[80, 80]" fa-translate="circle">
+      <fa-surface ng-if="circle.show" >
+        <div class="circle" ng-click="startGame(circle)" ng-mouseleave="mouseLeave(circle)" style="-webkit-box-shadow:inset 0px 0px 0px 2px {{colorMap[circle._id]}}; border-radius: 43px; width: 80px; height: 80px; margin: -40px 0 0 -40px;"></div>
+      </fa-surface>
+    </fa-modifier>
+  </fa-app>
+
+</div>

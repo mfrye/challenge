@@ -1,0 +1,21 @@
+{
+  "name": "challenge",
+  "main": "app.js",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14"
+  },
+  "dependencies": {
+    "famous-angular": "~0.4.0",
+    "lodash": "~2.4.1"
+  }
+}
